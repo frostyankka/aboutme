@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img class="logo" id="logo" src="img/logo.jpg" alt="Лого">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li class="dropdown">
+                <a href="portfolio.html">Портфолио</a>
+                <ul class="dropdown-menu">
+                    <li><a href="portfolio.html#arts">Арты</a></li>
+                    <li><a href="portfolio.html#edits">Эдиты, анимации</a></li>
+                    <li><a href="portfolio.html#fanmerch">Фан-мерч</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="empty"></div>
+</header>
+
+<main>
+    <section class="banner first">
+        <div class="content">
+            <h1>Мой творческий псевдоним Фрост</h1>
+            <h2>Я - многопрофильный творец, объединяющий цифровое искусство, программирование, литературу и рукоделие. Моя специализация - создание персонажей, иллюстрация, анимация. Не боюсь сложных тем, умею работать с разными материалами и форматами. Постоянно учусь новому и развиваю свои навыки.</h2>
+        </div>
+    </section>
+<div class="card">
+    <section class="achievmentsmap">
+        <div class="content">
+            <div class="achievmentsmap">
+            <h2>Карта достижений и опыта</h2>
+            <p>Следуйте по пути и кликайте по иконкам на карте снизу</p>
+            <img src="images/achievmentsmap.png" alt="Карта достижений и опыта" usemap="#achievmentsmap">
+            <map name="achievmentsmap">
+                <!-- каждая area задает область клика -->
+                <area shape="rect" coords="166,207, 251,317" data-text="Рукоделие - самостоятельно создала косплеи на различных персонажей." alt="Рукоделие">
+                <area shape="rect" coords="366,511, 480,648" data-text="Образовательные работы - успешная сдача проектов по веб-разработке, работа в Visual Studio." alt="Образовательные работы">
+                <area shape="rect" coords="564,70, 863,302" data-text="Технические проекты - самостоятельно собрала компьютер из двух старых систем (с подбором комплектующих и настройкой)." alt="Технические проекты">
+                <area shape="rect" coords="697,372, 861,555" data-text="Геймдев - создала игру для школьного проекта и заняла первое место в конкурсе проектов." alt="Геймдев">
+                <area shape="rect" coords="1018,526, 1117,621" data-text="Персональные вселенные - создала оригинальных персонажей с проработанным дизайном и характерами. Работаю над их визуальным и текстовым воплощением." alt="Персональные вселенные">
+                
+            </map>
+        </div>
+        </div>
+    </section>
+</div>
+<div class="card">
+    <section>
+        <div class="content">
+            <h2>Цели</h2>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Развиться в музыке, писать свои треки</li>
+                <li>Стать разработчиком игр</li>
+                <li>Улучшить навыки рисования, писательства, монтажа</li>
+                <li>Развить ютуб канал</li>
+            </ul>
+        </div>
+    </section>
+    </div>
+</main>
+
+<footer>
+    <div class="content">
+        <div class="footer_main">
+            <div class="footer_info">Гайнулина Карина, 2026 г.</div>
+            <div class="footer_menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">Обо мне</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- модальное окно для текста -->
+<div id="textModal" class="text-modal">
+    <div class="text-modal-content">
+        <span class="text-modal-close">&times;</span>
+        <div id="modalText"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

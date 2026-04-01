@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* логотип */
+#logo {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 80%;
+}
+
+/* блок контента*/
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    
+}
+
+.content h2{
+text-align: center;
+    
+}
+
+/* шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #9381b4;
+}
+
+header img.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 80%;
+}
+
+nav {
+    flex: 0 1 auto;
+}
+
+.empty {
+    width: 80px;
+    visibility: hidden;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* выпадающее меню */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #9381b4;
+    min-width: 180px;
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #F6E5F5;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #6b4f8c;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* баннер */
+section.banner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cdb9df;
+    color: #F6E5F5;
+}
+
+section.banner .content {
+    display: block;
+}
+
+section.banner h1,
+section.banner h2 {
+    color: #ffffff;
+}
+
+section.banner h1 {
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+section.banner h2 {
+    font-size: 5rem;
+}
+
+/* общие настройки */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f2ff;
+    color: #9381b4;
+    font-family: "Oswald", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body a {
+    color: #F6E5F5;
+}
+
+body h1 {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+
+
+.card h2,
+.card p,
+.card ul,
+.card li
+{
+    text-align: left !important;
+}
+
+footer {
+    background: #9381b4;
+    color: #F6E5F5;
+    font-size: 1rem;
+}
+
+.footer_menu nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+/* галерея (портфолио) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.gallery-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+}
+
+/* слайдер на главной */
+.portfolio {
+    position: relative;
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-container {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* кнопки контактов */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tg, .vk, .ds {
+    display: inline-block;
+    padding: 12px 28px;
+    min-width: 140px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tg { background: #0088cc; }
+.vk { background: #4c75a3; }
+.ds { background: #5865f2; }
+
+.tg:hover, .vk:hover, .ds:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    animation: zoomIn 0.3s;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 30px;
+}
+
+.lightbox-prev {
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #ccc;
+    transform: scale(1.1);
+}
+
+.lightbox-prev:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+.lightbox-next:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* адаптивность */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        background-color: #6b4f8c;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    .prev, .next {
+        font-size: 1.5rem;
+        padding: 6px 12px;
+    }
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 2rem;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 590px) {
+    section.banner.first { min-height: 250px; }
+    section.banner h1 { font-size: 2rem; }
+    section.banner h2 { font-size: 1rem; }
+    footer .footer_main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    header a { font-size: 1.2rem; }
+    header img.logo { width: 15vw; }
+}
+
+@media (min-width: 1024px) {
+    header a { font-size: 1.5rem; }
+    header img.logo { width: 12vw; }
+    section.banner.first { min-height: 200px; }
+}
+
+@media (min-width: 1440px) {
+    header a { font-size: 2rem; }
+    header .logo { width: 10vw; }
+    section.banner h1 { font-size: 2.5rem; }
+    section.banner h2 { font-size: 1rem; }
+}
+
+/* общие ссылки */
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #F6E5F5;
+}
+
+/* карта внутреннего мира, достижений */
+.insidemap img,
+.achievmentsmap img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*панель сзади*/
+.card {
+    background-color: #fcf8ff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin: 35px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+/* текстовое модальное окно */
+.text-modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.text-modal-content {
+    background-color: #fefefe;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    animation: zoomIn 0.3s;
+}
+
+.text-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.text-modal-close:hover {
+    color: #000;
+}
+
+/* для видео в галерее*/
+.gallery-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    object-fit: cover;
+}
+.gallery-img:hover {
+    transform: scale(1.02);
+}
+
+/* для видео внутри lightbox */
+#lightbox-video {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}

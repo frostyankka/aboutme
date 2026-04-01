@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img class="logo" id="logo" src="img/logo.jpg" alt="Лого">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li class="dropdown">
+                <a href="portfolio.html">Портфолио</a>
+                <ul class="dropdown-menu">
+                    <li><a href="portfolio.html#arts">Арты</a></li>
+                    <li><a href="portfolio.html#edits">Эдиты, анимации</a></li>
+                    <li><a href="portfolio.html#fanmerch">Фан-мерч</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="empty"></div>
+</header>
+
+<main>
+    <section class="banner first">
+        <div class="content">
+            <h1>Привет! Меня зовут Карина</h1>
+            <h2>Студентка УКГП, ИСиП24-ДО</h2>
+        </div>
+    </section>
+<div class="card">
+    <section class="insideworld">
+    <div class="content">
+        <div class="insidemap">
+            <h2>Карта внутреннего мира</h2>
+            <p>Кликайте по тексту на карте снизу</p>
+            <img src="images/worldmap1.png" alt="Карта внутреннего мира" usemap="#worldmap">
+            <map name="worldmap">
+                <!-- каждая area задает область клика  -->
+                <area shape="rect" coords="228,123, 361,227" data-text="<p><strong>Визуальное искусство:</strong></p><p>Цифровая иллюстрация - арты, фэнтези, портреты. Работаю в разных стилях.</p><p>Анимация - создание коротких анимационных роликов, 2D-анимация.</p><p>Эдиты и видео - монтаж, работа с визуальными эффектами.</p><p>Косплей - полное воплощение образов: подбор/пошив костюмов, грим, фотосъёмка.</p>" alt="Долина искусства">
+                <area shape="rect" coords="402,157, 553,288" data-text="<p><strong>Музыка:</strong></p><p>Гитара - учусь играть.</p><p>Скрипка - в планах.</p><p>Создание музыки - обучаюсь в FL Studio.</p>" alt="Музыкальное пастбище">
+                <area shape="poly" coords="627,219, 780,255, 740,381, 538,371, 593,264" data-text="<p><strong>Социальные и организационные навыки:</strong></p><p>Управление контентом, взаимодействие с аудиторией.</p><p>Организация коллабораций, ведение нескольких каналов.</p>" alt="Социальные норы">
+                <area shape="rect" coords="855,241, 1114,500" data-text="<p><strong>Рукоделие и фан-мерч:</strong></p><p>Вязание - вяжу игрушки для себя.</p><p>Фан-мерч - изготавливаю значки, брелоки, открытки, сувениры по мотивам любимых вселенных. Работа с разными материалами, дизайн с нуля.</p>" alt="Вязаный лес">
+                <area shape="rect" coords="168,354, 464,598" data-text="<p><strong>Литературное творчество:</strong></p><p>Пишу рассказы, работаю с характерами, создаю психологически глубоких персонажей.</p><p>Исследую сложные эмоциональные состояния, умею передавать атмосферу через текст.</p>" alt="Водопад текста">
+                <area shape="poly" coords="681,469, 819,473, 837,498, 559,562, 849,625, 785,698, 671,697, 632,506" data-text="<p><strong>Программирование и технологии:</strong></p><p>Языки и инструменты: C#, HTML, Visual Studio, Clickteam Fusion.</p><p>Проекты: учебные работы по веб-разработке, разработка программных модулей. Есть опыт сборки и настройки ПК из отдельных компонентов.</p>" alt="Озеро дикого кода">
+           
+            </map>
+        </div>
+    </div>
+</section>
+</div>
+
+<div class="card">
+    <h2>Примеры из портфолио</h2>
+    <div class="portfolio">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <img src="portfolio/arts/1.jpg" alt="img1">
+                    <img src="portfolio/arts/2.jpg" alt="img2">
+                    <img src="portfolio/arts/8.jpg" alt="img3">
+                    <img src="portfolio/arts/11.jpg" alt="img4">
+                    <img src="portfolio/arts/3.jpg" alt="img5">
+                </div>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+    </div>
+</main>
+
+<footer>
+    <div class="content">
+        <div class="footer_main">
+            <div class="footer_info">Гайнулина Карина, 2026 г.</div>
+            <div class="footer_menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">Обо мне</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- модальное окно для текста -->
+<div id="textModal" class="text-modal">
+    <div class="text-modal-content">
+        <span class="text-modal-close">&times;</span>
+        <div id="modalText"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
