@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img class="logo" id="logo" src="img/logo.jpg" alt="Лого">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li class="dropdown">
+                <a href="portfolio.html">Портфолио</a>
+                <ul class="dropdown-menu">
+                    <li><a href="portfolio.html#arts">Арты</a></li>
+                    <li><a href="portfolio.html#edits">Эдиты, анимации</a></li>
+                    <li><a href="portfolio.html#fanmerch">Фан-мерч</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="empty"></div>
+</header>
+
+<main>
+    <div class="card">
+    <h1>Портфолио</h1>
+
+    <section class="arts" id="arts">
+        <h2>Арты</h2>
+        <div class="gallery">
+            <img class="gallery-img" src="portfolio/arts/1.jpg" alt="Арт 1">
+            <img class="gallery-img" src="portfolio/arts/2.jpg" alt="Арт 2">
+            <img class="gallery-img" src="portfolio/arts/3.jpg" alt="Арт 3">
+            <img class="gallery-img" src="portfolio/arts/4.jpg" alt="Арт 4">
+            <img class="gallery-img" src="portfolio/arts/5.jpg" alt="Арт 5">
+            <img class="gallery-img" src="portfolio/arts/6.jpg" alt="Арт 6">
+            <img class="gallery-img" src="portfolio/arts/7.jpg" alt="Арт 7">
+            <img class="gallery-img" src="portfolio/arts/8.jpg" alt="Арт 8">
+            <img class="gallery-img" src="portfolio/arts/9.jpg" alt="Арт 9">
+            <img class="gallery-img" src="portfolio/arts/10.jpg" alt="Арт 10">
+            <img class="gallery-img" src="portfolio/arts/11.jpg" alt="Арт 11">
+            <img class="gallery-img" src="portfolio/arts/12.jpg" alt="Арт 12">
+            <img class="gallery-img" src="portfolio/arts/13.jpg" alt="Арт 13">
+            <img class="gallery-img" src="portfolio/arts/14.jpg" alt="Арт 14">
+            <img class="gallery-img" src="portfolio/arts/15.jpg" alt="Арт 15">
+            <img class="gallery-img" src="portfolio/arts/16.jpg" alt="Арт 16">
+            <img class="gallery-img" src="portfolio/arts/17.jpg" alt="Арт 17">
+            <img class="gallery-img" src="portfolio/arts/18.jpg" alt="Арт 18">
+            <img class="gallery-img" src="portfolio/arts/19.jpg" alt="Арт 19">
+        </div>
+    </section>
+
+    <section class="edits" id="edits">
+    <h2>Эдиты, анимации</h2>
+    <div class="gallery">
+        <video class="gallery-img" src="portfolio/edits/1.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/edits/2.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/edits/3.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/edits/4.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/edits/5.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/edits/6.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/edits/7.mp4" controls preload="none"></video>
+    </div>
+</section>
+
+<section class="fanmerch" id="fanmerch">
+    <h2>Фан-мерч, косплеи</h2>
+    <div class="gallery">
+        <video class="gallery-img" src="portfolio/fanmerch/1.mp4" controls preload="none"></video>
+        <video class="gallery-img" src="portfolio/fanmerch/2.mp4" controls preload="none"></video>
+        <img class="gallery-img" src="portfolio/fanmerch/3.png" alt="Мерч 3">
+        <img class="gallery-img" src="portfolio/fanmerch/4.jpg" alt="Мерч 4">
+        <img class="gallery-img" src="portfolio/fanmerch/5.jpg" alt="Мерч 5">
+        <img class="gallery-img" src="portfolio/fanmerch/6.jpg" alt="Мерч 6">
+    </div>
+</section>
+    </div>
+</main>
+
+<footer>
+    <div class="content">
+        <div class="footer_main">
+            <div class="footer_info">Гайнулина Карина, 2026 г.</div>
+            <div class="footer_menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">Обо мне</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <span class="lightbox-prev">❮</span>
+    <span class="lightbox-next">❯</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Увеличенное изображение" style="display:none;">
+    <video class="lightbox-content" id="lightbox-video" controls style="display:none;"></video>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
