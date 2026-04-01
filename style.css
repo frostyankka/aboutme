@@ -505,3 +505,62 @@ footer a {
     max-height: 90%;
     object-fit: contain;
 }
+
+/*адаптация для телефонов */
+@media (max-width: 768px) {
+    section.banner h1 {
+        font-size: 1.2rem;
+    }
+    section.banner h2 {
+        font-size: 1rem;
+    }
+    section.banner.first {
+        min-height: auto;
+        padding: 1rem;
+    }
+    .portfolio {
+        width: 90%;
+    }
+    .gallery-img {
+        width: calc(50% - 0.5rem);
+        max-width: 100%;
+    }
+    .card {
+        margin: 15px;
+        padding: 15px;
+    }
+    header nav ul {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    header nav ul li {
+        margin-right: 0;
+    }
+    .empty {
+        width: 0;
+        visibility: hidden;
+    }
+    header img.logo {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-img {
+        width: 100%;
+    }
+    section.banner h1 {
+        font-size: 1rem;
+    }
+    section.banner h2 {
+        font-size: 0.8rem;
+    }
+    .contact-buttons {
+        gap: 0.8rem;
+    }
+    .tg, .vk, .ds {
+        padding: 8px 16px;
+        min-width: 100px;
+        font-size: 1rem;
+    }
+}
